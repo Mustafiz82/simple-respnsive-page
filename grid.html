@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+
+            justify-content: space-around;
+
+        }
+
+        .h1,
+        .disc {
+            width: 30%;
+        }
+
+        
+
+        .section {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+
+        }
+        img{
+            width: 200px;
+        }
+        .img {
+            /* width: 200px; */
+            display: flex;
+            position: relative;
+
+            }
+            .img h2{
+                
+                transform: rotate(90deg);
+                position: absolute;
+                top: 0;
+                /* right: -128px; */
+                right: -128px;
+
+                font-size: 16px;
+                transform-origin: top left;
+
+        }
+
+        
+
+
+
+
+        .image-2,
+        .image-5 {
+            margin-top: 100px;
+
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+
+            }
+
+            h1,
+            .disc {
+                width: 100%;
+            }
+
+            .section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .image-2,
+            .image-5 {
+                margin-top: 0;
+
+
+            }
+            .img{
+                width: 100%;
+                
+            }
+
+            
+
+            .image-2,
+            .image-4,
+            .image-6 {
+                margin-top: 50px;
+                /* transform: translateY(50px); */
+            }
+
+            .image-4 {
+                /* padding-top: 100px; */
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>The Creative Cree</h1>
+            <div class="disc">
+                <h2>Who We are</h2>
+                <p>we are team of creativety diverse driven innovative individual working in various loacarion in the
+                    world</p>
+            </div>
+        </div>
+        <div class="section">
+
+
+            <div class="image-1">
+                <div class="img">
+                    <img src="photo1.png" alt="">
+                    <h2>Product Owner</h2>
+
+                </div>
+                <div class="people-name">bill mohonoy</div>
+            </div>
+            <div class="image-2">
+                <div class="img">
+                    <img src="photo2.png " alt="">
+                    <h2>Product Owner</h2>
+
+                </div>
+                <div class="people-name">bill mohonoy</div>
+            </div>
+            <div class="image-3 ">
+                <div class="img">
+                    <img src="photo3.png" alt="">
+                    <h2>Product Owner</h2>
+
+                </div>
+                <div class="people-name">bill mohonoy</div>
+            </div>
+            <div class="image-4">
+                <div class="img">
+                    <img src="photo4.png " alt="">
+                    <h2>Product Owner</h2>
+
+                </div>
+                <div class="people-name">bill mohonoy</div>
+            </div>
+            <div class="image-5">
+                <div class="img">
+                    <img src="photo5.png" alt="">
+                    <h2>Product Owner</h2>
+
+                </div>
+                <div class="people-name">bill mohonoy</div>
+            </div>
+            <div class="image-6">
+                <div class="img">
+                    <img src="photo6.png" alt="">
+                    <h2>Product Owner</h2>
+
+                </div>
+                <div class="people-name">bill mohonoy</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
